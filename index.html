@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Profile Section (Top Right) -->
+    <div class="profile-container">
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile" class="profile-img">
+        <div class="profile-menu">
+            <ul>
+                <li onclick="navigateToProfile()"><i class="fas fa-user"></i> View Profile</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li onclick="logoutUser()"><i class="fas fa-sign-out-alt"></i> Logout</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>"Go Green, Breathe Clean!"</h1>
+    </div>
+
+    <!-- Options Section -->
+    <div class="options">
+        <div class="option" onclick="showRewards()">
+            <i class="fas fa-gift"></i>
+            <p>Rewards</p>
+        </div>
+        <div class="option">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Schemes</p>
+        </div>
+        <div class="option">
+            <i class="fas fa-trophy"></i>
+            <p>Leaderboard</p>
+        </div>
+        <div class="option">
+            <i class="fas fa-question-circle"></i>
+            <p>Help Center</p>
+        </div>
+        <div class="option">
+            <i class="fas fa-robot"></i>
+            <p>AI Bot</p>
+        </div>
+    </div>
+
+    <!-- Scan QR Button -->
+    <div class="scan-qr">
+        <button>Scan QR</button>
+    </div>
+
+    <!-- Rewards Popup -->
+    <div class="rewards-popup" id="rewardsPopup">
+        <div class="rewards-content">
+            <span class="close-btn" onclick="closeRewards()">&times;</span>
+            <h2>🎉 Your Rewards 🎉</h2>
+            <div class="reward">
+                <i class="fas fa-coins"></i>
+                <p>₹50 Cashback on UPI Payment</p>
+            </div>
+            <div class="reward">
+                <i class="fas fa-percent"></i>
+                <p>10% Off on Green Energy Products</p>
+            </div>
+            <div class="reward">
+                <i class="fas fa-tree"></i>
+                <p>Plant a Tree on Your Behalf 🌱</p>
+            </div>
+            <div class="reward">
+                <i class="fas fa-credit-card"></i>
+                <p>₹100 Voucher on Eco-Friendly Brands</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
